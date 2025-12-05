@@ -23,3 +23,9 @@ Jotain tänne
 
 ## Uudet oivallukset
 Vanhan korjaus / parannus kun enemmän osaamista löytyy
+
+### Esimerkkinä storen käytön välttely
+
+Koska sovelluksen data perustuu API kutsuihin (joka sivulla päivitetty data haetaan tietokannasta), ei sovelluksella ollut mitään jaettavaa dataa komponenttien välillä. Tähän ainoina poikkeuksina oli id:n siirto yhdeltä sivulta toiselle ja admin näkymä, joka simuloi eri käyttäjien näkymiä eri sivuilla (Admin näkee enemmän tietoa).\n
+
+Ratkaisuna molemmissa tapauksissa käytin reittiparametreja, koska ajattelin tapauksien olevan niin pienimuotoisia, että ne ei tarvitsisi erillistä storea (josta en Angularissa tiennyt mitään). Tämä laiskuus myöhemmässä vaiheessa kostautui itselle, kun admin näkymä laajeni kaikille sivuille, jolloin jouduin reitityksen ja reittiparametrien kanssa tappelemaan, jotka ei lopulta jokaisessa tilanteessa toiminut. Jos tälle olisin alunperin tehnyt storen, niin tuleva ominaisuuden laajentaminen olisi ollut paljon yksinkertaisempaa.
