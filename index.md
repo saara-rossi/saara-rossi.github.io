@@ -15,6 +15,14 @@ Projektin alussa Angular osaamista ei ollut ja ymmärrys hyvästä projektin kan
 # Oma kontribuutio
 Oma roolini oli frontend kehittäjä, joten olin vastuussa frontend puolen toiminnallisuudesta. Testaajan rooli siirtyi itseltä pois kesken projektin työmäärän jaon tasauksen seurauksena.
 
+## Home --> Tuoterivien tarkastelu navigaatio
+Kun dokumenttia joko haetaan hakupalkilla lavanumerolla tai klikataan listasta admin näkymässä, otetaan kyseisen dokumentin id talteen, 
+viedään se reittiparametrin kautta inspect-document sivulle ja haetaan API:sta id:tä käyttäen dokumenttiin liittyvä data ja alkuperäinen skannattu pdf. 
+Relevantti data renderöidään sivulle muokattavassa muodossa.
+
+## Tuoterivien haku
+Jotain tuoterivien hakufunktioista.
+
 # Mitä opin
 
 ## Tiimityöskentely
