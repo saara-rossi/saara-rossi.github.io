@@ -7,6 +7,8 @@ title: Portfolio
 
 DocuLens on lähetyslistojen digitalisointiohjelmisto, jonka avulla skannatut lähetyslistat voidaan ladata sovellukseen, niiden sisältävää tietoa voi tarkastella, muokata ja tallentaa. Esimiesnäkymässä (admin) pystyy myös näkemään ja tarkastelemaan valmiita, jo tarkastettuja lähetyslistoja.
 
+<img src="assets/Sovellus.png" alt="Sovellus" width="800">
+
 # Alku
 Projektin alussa Angular osaamista ei ollut ja ymmärrys hyvästä projektin kansiorakenteesta ja modulaarisuudesta olivat vähäisiä. API interaktioista oli vain pientä tietoa ja GitHub osaaminen oli olematonta.
 
