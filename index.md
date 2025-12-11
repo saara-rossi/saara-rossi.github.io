@@ -17,6 +17,38 @@ Projektin alussa Angular osaamista ei ollut ja ymmärrys hyvästä projektin kan
 
 Oma roolini oli frontend kehittäjä, joten olin vastuussa frontend puolen toiminnallisuudesta. Testaajan rooli siirtyi itseltä pois kesken projektin työmäärän jaon tasauksen seurauksena.
 
+## Datan kulku
+
+Koska skannatut dokumentit käyvät läpi OCR prosessin backendissä, joka sivulle tuleva data on erilaista (Home > dokumenttien metadata, Inspect-document > OCR-prosessin tulos, Document-list > Muokattujen dokumenttien metadata). Tämän takia sovelluksen komponentit eivät jaa dataa, jolloin joka sivulle tuleva data haetaan api-kutsulla.
+
+*Esimerkki Home sivun datan hausta:*
+
+```TypeScript
+  private loadUnfinishedDocuments(forceReload = false): void {
+    this.api.loadEndpoints(forceReload).subscribe({
+      next: () => {
+        this.api.getUnfinishedDocuments().subscribe({
+          next: (data) => {
+            const returnedFiles: DisplayDocumentModel[] = data.map((document: any) =>
+              this.modelingService.modelUnfinishedDocument(document)
+            );
+            this.allFiles = returnedFiles;
+            this.displayAmount(this.displayedAmount, this.allFiles);
+          },
+          error: (err) => {
+            console.error('Virhe keskeneräisten tiedostojen haussa');
+            this.showNotificationModal(false, 'Keskeneräisten tiedostojen haku epäonnistui');
+          },
+        });
+      },
+      error: (err) => {
+        console.error('Endpointien lataus epäonnistui');
+        this.showNotificationModal(false, 'Dokumenttien lataus epäonnistui');
+      },
+    });
+  }
+```
+
 ## ?? Home --> Inspect-document navigaatio ?? 
 
 Kun dokumenttia joko haetaan hakupalkilla lavanumerolla tai klikataan listasta admin näkymässä, otetaan kyseisen dokumentin id talteen, 
