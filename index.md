@@ -2,6 +2,8 @@
 layout: default
 title: Portfolio
 ---
+<link rel="stylesheet" href="/assets/css/syntax.css">
+
 
 # DocuLens
 
