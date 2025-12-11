@@ -1,0 +1,14 @@
+/* Syntax highlighting from Rouge GitHub theme */
+.highlight { background-color: #f6f8fa; padding: 0.8em; border-radius: 5px; }
+.highlight .c { color: #6a737d } /* Comment */
+.highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
+.highlight .k { font-weight: bold } /* Keyword */
+.highlight .o { font-weight: bold } /* Operator */
+.highlight .cm { color: #6a737d } /* Comment.Multiline */
+.highlight .cp { color: #6a737d } /* Comment.Preproc */
+.highlight .c1 { color: #6a737d } /* Comment.Single */
+.highlight .cs { color: #6a737d } /* Comment.Special */
+.highlight .gd { color: #b31d28; background-color: #ffeef0 } /* Generic.Deleted */
+.highlight .gi { color: #22863a; background-color: #f0fff4 } /* Generic.Inserted */
+.highlight .kc { font-weight: bold } /* Keyword.Constant */
+/* (You can include the full stylesheet if you want deeper coloring) */
