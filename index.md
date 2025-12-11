@@ -23,7 +23,7 @@ Koska skannatut dokumentit käyvät läpi OCR prosessin backendissä, joka sivul
 
 *Esimerkki Home sivun datan hausta:*
 
-```TypeScript
+```typescript
   private loadUnfinishedDocuments(forceReload = false): void {
     this.api.loadEndpoints(forceReload).subscribe({
       next: () => {
