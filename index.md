@@ -21,7 +21,7 @@ Oma roolini oli frontend kehittäjä, joten olin vastuussa frontend puolen toimi
 
 ## Datan kulku
 
-Koska skannatut dokumentit käyvät läpi OCR prosessin backendissä, joka sivulle tuleva data on erilaista (Home > dokumenttien metadata, Inspect-document > OCR-prosessin tulos, Document-list > Muokattujen dokumenttien metadata). Tämän takia sovelluksen komponentit eivät jaa dataa, jolloin joka sivulle tuleva data haetaan api-kutsulla.
+Koska skannatut dokumentit käsitellään backendissä OCR-prosessin kautta, eri näkymiin tuleva data poikkeaa toisistaan. Esimerkiksi Home-näkymässä näytetään dokumenttien metadataa, Inspect Document -näkymässä OCR-prosessin tulokset ja Document List -näkymässä muokattujen dokumenttien metadataa. Tästä syystä sovelluksen komponentit eivät jaa keskenään dataa, vaan kunkin näkymän tarvitsema tieto haetaan erillisellä API-kutsulla.
 
 *Esimerkki Home sivun datan hausta:*
 
