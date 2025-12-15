@@ -21,6 +21,14 @@ Tavoitteenani oli oppia frontend-sovelluskehitystä. Projektin edetessä tämä 
 
 Oma roolini oli frontend kehittäjä, joten olin vastuussa frontend puolen toiminnallisuudesta. Testaajan rooli siirtyi itseltä pois kesken projektin työmäärän jaon tasauksen seurauksena. Tällöin en kerennyt kuin hieman oppia ja tehdä testausta, nekin ainoastaan sovelluksen kotisivulle.
 
+## Arkkitehtuuri
+
+Kun projekti eteni ja koodimäärä kasvoi, opin käyttämään enemmän eriytettyjä malleja ja servicejä, jotta koodi pysyisi luettavampana ja ymmärrettävämpänä. Lopussa sovellus rakentui modulaarisesti siten, että komponentit vastaavat näkymälogiikasta, servicet datan hausta ja mallinnuksesta, ja mallit määrittävät sovelluksen sisäisen tietorakenteen.
+
+*Mallinnus-service:*
+
+<img src="assets/mallinnus_service.png" alt="Datan haku" width="800">
+
 ## Datan kulku
 
 Koska skannatut dokumentit käsitellään backendissä OCR-prosessin kautta, eri näkymiin tuleva data poikkeaa toisistaan. Esimerkiksi Home-näkymässä näytetään dokumenttien metadataa, Inspect Document -näkymässä OCR-prosessin tulokset ja Document List -näkymässä muokattujen dokumenttien metadataa. Tästä syystä sovelluksen komponentit eivät jaa keskenään dataa, vaan kunkin näkymän tarvitsema tieto haetaan erillisellä API-kutsulla.
