@@ -13,11 +13,13 @@ DocuLens on lähetyslistojen digitalisointiohjelmisto, jonka avulla skannatut l�
 
 # Alku
 
-Projektin alussa Angular osaamista ei ollut ja ymmärrys hyvästä projektin kansiorakenteesta ja modulaarisuudesta olivat vähäisiä. API interaktioista oli vain pientä tietoa ja GitHub osaaminen oli olematonta.
+Projektin alussa itsellä ei ollut aiempaa osaamista Angularista. Ymmärrys hyvästä projektin kansiorakenteesta ja modulaarisesta kehityksestä oli vähäistä. API-rajapintojen hyödyntämisestä minulla oli vain perustason tietoa, ja GitHubin käyttö projektityöskentelyssä oli täysin uutta.
+
+Tavoitteenani oli oppia frontend-sovelluskehitystä. Projektin edetessä tämä tavoite tarkentui Angular-frameworkin oppimiseen sekä pitkäkestoisessa projektissa toimimiseen ja ryhmätyöskentelyn kehittämiseen.
 
 # Oma kontribuutio
 
-Oma roolini oli frontend kehittäjä, joten olin vastuussa frontend puolen toiminnallisuudesta. Testaajan rooli siirtyi itseltä pois kesken projektin työmäärän jaon tasauksen seurauksena.
+Oma roolini oli frontend kehittäjä, joten olin vastuussa frontend puolen toiminnallisuudesta. Testaajan rooli siirtyi itseltä pois kesken projektin työmäärän jaon tasauksen seurauksena. Tällöin en kerennyt kuin hieman oppia ja tehdä testausta, nekin ainoastaan sovelluksen kotisivulle.
 
 ## Datan kulku
 
@@ -27,13 +29,6 @@ Koska skannatut dokumentit käsitellään backendissä OCR-prosessin kautta, eri
 
 
 <img src="assets/home_datanhaku.png" alt="Datan haku" width="800">
-
-
-## ?? Home --> Inspect-document navigaatio ?? 
-
-Kun dokumenttia joko haetaan hakupalkilla lavanumerolla tai klikataan listasta admin näkymässä, otetaan kyseisen dokumentin id talteen, 
-viedään se reittiparametrin kautta inspect-document sivulle ja haetaan API:sta id:tä käyttäen dokumenttiin liittyvä data ja alkuperäinen skannattu pdf. 
-Relevantti data renderöidään sivulle muokattavassa muodossa. | Kuva tähän |
 
 ## Tuoterivien haku
 
