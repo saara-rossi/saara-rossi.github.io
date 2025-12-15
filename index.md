@@ -35,7 +35,11 @@ Lopussa sovellus rakentui modulaarisesti siten, että:
 
 *Mallinnus-service:*
 
-<img src="assets/mallinnus_service.png" alt="Datan haku" width="800">
+<img src="assets/mallinnus_service.png" alt="Mallinnus service" width="800">
+
+*Osa api-servicestä:*
+
+<img src="assets/api_service_osa.png" alt="Api service" width="800">
 
 ## Datan kulku
 
@@ -52,7 +56,7 @@ Tuoterivien haku tuotteen koodiin perustuen alkoi projektin alkupuolella vain yh
 
 *Tuoterivien haku:*
 
-<img src="assets/tuoterivin_haku.png" alt="Datan haku" width="800">
+<img src="assets/tuoterivin_haku.png" alt="Tuoterivien haku" width="800">
 
 # Mitä opin
 
