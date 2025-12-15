@@ -25,31 +25,9 @@ Koska skannatut dokumentit käsitellään backendissä OCR-prosessin kautta, eri
 
 *Esimerkki Home sivun datan hausta:*
 
-```typescript
-  private loadUnfinishedDocuments(forceReload = false): void {
-    this.api.loadEndpoints(forceReload).subscribe({
-      next: () => {
-        this.api.getUnfinishedDocuments().subscribe({
-          next: (data) => {
-            const returnedFiles: DisplayDocumentModel[] = data.map((document: any) =>
-              this.modelingService.modelUnfinishedDocument(document)
-            );
-            this.allFiles = returnedFiles;
-            this.displayAmount(this.displayedAmount, this.allFiles);
-          },
-          error: (err) => {
-            console.error('Virhe keskeneräisten tiedostojen haussa');
-            this.showNotificationModal(false, 'Keskeneräisten tiedostojen haku epäonnistui');
-          },
-        });
-      },
-      error: (err) => {
-        console.error('Endpointien lataus epäonnistui');
-        this.showNotificationModal(false, 'Dokumenttien lataus epäonnistui');
-      },
-    });
-  }
-```
+
+<img src="assets/home_datanhaku.png" alt="Datan haku" width="800">
+
 
 ## ?? Home --> Inspect-document navigaatio ?? 
 
