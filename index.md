@@ -23,7 +23,15 @@ Oma roolini oli frontend kehittäjä, joten olin vastuussa frontend puolen toimi
 
 ## Arkkitehtuuri
 
-Kun projekti eteni ja koodimäärä kasvoi, opin käyttämään enemmän eriytettyjä malleja ja servicejä, jotta koodi pysyisi luettavampana ja ymmärrettävämpänä. Lopussa sovellus rakentui modulaarisesti siten, että komponentit vastaavat näkymälogiikasta, servicet datan hausta ja mallinnuksesta, ja mallit määrittävät sovelluksen sisäisen tietorakenteen.
+Kun projekti eteni ja koodimäärä kasvoi, opin käyttämään enemmän eriytettyjä malleja ja servicejä, jotta koodi pysyisi luettavampana ja ymmärrettävämpänä. 
+
+Erityinen oivallus tuli datan mallinnuksen siirtämisestä erikseen jokaisesta komponentista sijaitsevista metodista keskitettyyn mallinnus-serviceen. Vaikkakin jokaisen komponentin datan mallinnus oli uniikki itselleen eikä jaettava muissa komponenteissa, metodien siirtäminen serviceen selkeytti koodia paljon.
+
+Lopussa sovellus rakentui modulaarisesti siten, että:
+
+- Komponentit vastaavat näkymälogiikasta
+- Servicet datan hausta ja mallinnuksesta
+- Mallit määrittävät sovelluksen sisäisen tietorakenteen
 
 *Mallinnus-service:*
 
