@@ -74,6 +74,8 @@ Koska sovelluksen data perustuu API kutsuihin (joka sivulla päivitetty data hae
 
 Ratkaisuna molemmissa tapauksissa käytin reittiparametreja, koska ajattelin tapauksien olevan niin pienimuotoisia, että ne ei tarvitsisi erillistä storea (josta en Angularissa tiennyt mitään). Tämä laiskuus myöhemmässä vaiheessa kostautui, kun admin näkymä laajeni etusivulta kaikille sivuille, jolloin jouduin reitityksen ja reittiparametrien kanssa tappelemaan, jotka eivät lopulta jokaisessa tilanteessa toimineet. Jos tälle olisin alunperin tehnyt storen, niin tuleva ominaisuuden laajentaminen olisi ollut paljon yksinkertaisempaa.
 
+*Sovelluksen reititys:*
+
 <img src="assets/reititys.png" alt="Reititys" width="800">
 
 ## Uudet oivallukset
