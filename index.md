@@ -25,7 +25,7 @@ Oma roolini oli frontend kehittäjä, joten olin vastuussa frontend puolen toimi
 
 Kun projekti eteni ja koodimäärä kasvoi, opin käyttämään enemmän eriytettyjä malleja ja servicejä, jotta koodi pysyisi luettavampana ja ymmärrettävämpänä. 
 
-Erityinen oivallus tuli datan mallinnuksen siirtämisestä erikseen jokaisesta komponentista sijaitsevista metodista keskitettyyn mallinnus-serviceen. Vaikkakin jokaisen komponentin datan mallinnus oli uniikki itselleen eikä jaettava muissa komponenteissa, metodien siirtäminen serviceen selkeytti koodia paljon.
+Erityinen oivallus tuli datan mallinnuksen siirtämisestä keskitettyyn mallinnus-serviceen. Vaikkakin jokaisen komponentin datan mallinnus oli uniikki itselleen eikä jaettava muissa komponenteissa, metodien siirtäminen serviceen selkeytti koodia paljon.
 
 Lopussa sovellus rakentui modulaarisesti siten, että:
 
