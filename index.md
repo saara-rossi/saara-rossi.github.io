@@ -37,7 +37,9 @@ Relevantti data renderöidään sivulle muokattavassa muodossa. | Kuva tähän |
 
 ## Tuoterivien haku
 
-Jotain tuoterivien hakufunktioista. | Kuva tähän |
+Tuoterivien haku tuotteen koodiin perustuen alkoi projektin alkupuolella vain yhdestä koodista. Kuitenkin äkkiä huomattiin, että oikeassa tilanteessa yhdellä tuotteella voi olla useita eri koodeja. Tällöin backend puolessa tuoterivin dataan lisättiin taulukko, joka sisältää nämä mahdolliset koodit, ja hakufunktio oli rakennettava käsittelemään mahdolliset lisätyt koodit.
+
+<img src="assets/tuoterivin_haku.png" alt="Datan haku" width="800">
 
 # Mitä opin
 
