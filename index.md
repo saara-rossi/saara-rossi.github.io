@@ -19,7 +19,7 @@ Tavoitteenani oli oppia frontend-sovelluskehitystä. Projektin edetessä tämä 
 
 # Oma kontribuutio
 
-Oma roolini oli frontend kehittäjä, joten olin vastuussa frontend puolen toiminnallisuudesta. Testaajan rooli siirtyi itseltä pois kesken projektin työmäärän jaon tasauksen seurauksena. Tällöin en kerennyt kuin hieman oppia ja tehdä testausta, nekin ainoastaan sovelluksen kotisivulle.
+Oma pääroolini oli frontend kehittäjä, joten olin vastuussa frontend puolen toiminnallisuudesta. Testaajan sivurooli siirtyi itseltä pois kesken projektin työmäärän jaon tasauksen seurauksena. Tällöin en kerennyt kuin hieman oppia ja tehdä testausta, nekin ainoastaan sovelluksen kotisivulle.
 
 ## Arkkitehtuuri
 
@@ -60,9 +60,17 @@ Tuoterivien haku tuotteen koodiin perustuen alkoi projektin alkupuolella vain yh
 
 # Mitä opin
 
+## Vahvuudet TC:n jälkeen
+
+- Angularin perusteet
+- frontend-arkkitehtuuri
+- API-integraatiot
+- Tiimityöskentely ja kommunikaatio
+- Gitin käyttö
+
 ## Tiimityöskentely
 
-Projektin edetessä opin paremmaksi kommunikoijaksi, joka johtui tiimiläisiin tutustumisesta ja projektin itsensä paremmasta ymmärtämisestä. 
+Projektin edetessä opin paremmaksi kommunikoijaksi, joka johtui tiimiläisiin tutustumisesta ja projektin itsensä paremmasta ymmärtämisestä. Koska tiimissä oli paljon poissaoloja syksyn aikana, erityisen tärkeäksi huomasin hyvät ja selkeät commit-viestit ja viestintä myös etänä, jotta kaikki olisivat etenemisestä ajan tasalla ja merge conflict- tilanteilta vältyttäisiin.
 
 ## Projektin muutokset / laajeneminen
 
@@ -78,8 +86,9 @@ Ratkaisuna molemmissa tapauksissa käytin reittiparametreja, koska ajattelin tap
 
 <img src="assets/reititys.png" alt="Reititys" width="800">
 
-## Uudet oivallukset
-Vanhan korjaus / parannus kun enemmän osaamista löytyy
 
+# Tulevaisuus
 
+Syksyn edetessä kiinnostus koko sovelluksen kehitysprosessiin kasvoi, itse tein frontend puolen hommia mutta kiinnostuin myös backend puolesta ja kuinka sovelluksen eri osat yhdistetään toisiinsa. Opin Ticorporaten aikana paljon frontend-sovelluskehityksen hyvistä käytänteistä ja ongelmanratkaisukyky on kasvanut, olen jälkikäteen koodia tutkiessa löytänyt jo useita osia joita voisi parantaa ja joista toistoa voisi vähentää.
 
+Itseäni on aina kiinnostanut sovelluskehityksessä koodaus, ja tämä kiinnostus kasvoi syksyn aikana. Tulevaisuudessa haluaisin olla osaava frontend -ja backend puolessa, joten tulen keskittymään enemmän backend kehityksen opiskeluun.
