@@ -1,6 +1,5 @@
 theme: jekyll-theme-cayman
-title: DocuLens
-description: Ticorporate portfolio
+title: Portfolio
 
 markdown: kramdown
 kramdown:
